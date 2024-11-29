@@ -1,74 +1,80 @@
-# Getting Started with Create React App
+## LLM in a Box - Dashboard UI and Pricing Page
+Overview
+The LLM in a Box Dashboard UI is a responsive and modern user interface built with React and Material-UI. It features a clean and intuitive layout with a Pricing Page that showcases various subscription plans for the users of the platform.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Key Features:
+Responsive Layout: Optimized for different screen sizes (mobile, tablet, desktop).
+Dashboard UI: A central control panel with navigation to key areas of the platform.
+Pricing Page: Displays multiple subscription plans, each with unique features and a distinct color scheme for better visual distinction.
+Folder Structure
+The project follows a clean and modular structure, where each component and page is organized for easy navigation and maintenance.
 
-## Available Scripts
+bash
+Copy code
+/src
+  /components
+    - DashboardUI.js       # Main Dashboard UI component
+    - PricingPlan.js       # Pricing page component displaying plans
+  /assets
+    - Created AI Assistants.jpg  # Logo for the pricing page
+    - llminaboxlogo.png          # Logo for the Dashboard UI
+  /styles
+    - theme.js              # Custom styles and theme for Material-UI components
+  App.js                    # Main entry point for the React application
+  index.js                  # ReactDOM render method for the root app
+Installation
+To set up and run the project locally, follow these steps:
 
-In the project directory, you can run:
+Clone the repository to your local machine.
 
-### `npm start`
+bash
+Copy code
+git clone <repository-url>
+Navigate to the project directory.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy code
+cd llm-in-a-box-dashboard
+Install the required dependencies.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copy code
+npm install
+Running the Application
+Once the dependencies are installed, you can start the development server with the following command:
 
-### `npm test`
+bash
+Copy code
+npm start
+This will start the development server and open the application in your default web browser. The app will be available at:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+arduino
+Copy code
+http://localhost:3000
+Dashboard UI
+Overview
+The Dashboard UI provides the following features:
 
-### `npm run build`
+AppBar with Logo and Title: Displays the LLM in a Box logo and the title.
+Navigation Links: Links to key pages such as Dashboard and Pricing.
+User Profile Menu: Displays a menu with options like Critical Future, Support, and Log Out.
+Key Components:
+AppBar: A sticky top navigation bar with options for navigation and user settings.
+Toolbar: Contains logo, title, and user profile dropdown.
+IconButton and Menu: The user menu with account details and logout options.
+Pricing Page
+Overview
+The Pricing Page displays different subscription plans with unique pricing and feature sets. There are three plans:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Monthly Plan: $89.99/month with premium features.
+Annual Plan: $999.99/year, offering a discount for long-term subscriptions.
+Enterprise Plan: Contact for pricing, designed for large-scale custom solutions.
+Each plan has a distinct color theme to differentiate them:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# dashboard-ui" 
-"# dashboard-ui" 
-"# L-L-M-IN-A-BOX" 
-"# L-L-M-IN-A-BOX" 
+Yellow for Monthly Plan
+Cyan for Annual Plan
+Smooth Pink for Enterprise Plan
+Key Components:
+Pricing Plan Cards: Displaying the title, price, description, and features of each plan.
+Button Actions: Allows users to select the appropriate plan or contact for Enterprise pricing.
+Responsive Grid Layout: Adjusts the layout for different screen sizes, ensuring an optimal experience across devices.
